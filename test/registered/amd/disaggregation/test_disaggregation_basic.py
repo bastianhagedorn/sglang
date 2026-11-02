@@ -18,7 +18,7 @@ from sglang.test.test_utils import (
     popen_launch_pd_server,
 )
 
-register_amd_ci(est_time=600, suite="stage-b-test-large-8-gpu-mi35x-disaggregation-amd")
+register_amd_ci(est_time=600, stage="base-b", runner_config="8-gpu-mi35x-fabric")
 
 
 class TestDisaggregationAccuracy(PDDisaggregationServerBase):
